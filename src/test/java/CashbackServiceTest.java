@@ -8,10 +8,8 @@ class CashbackServiceTest {
     void calculateCashback_noBonus_one() {
         //Arrange
         CashbackService service = new CashbackService();
-
-
         //Act
-        String result = service.calculateCashback
+        String result = service.calculateCashback("Apple");
         //Assert
         assertEquals(400, result);
 
